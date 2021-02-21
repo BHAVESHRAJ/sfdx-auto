@@ -1,7 +1,9 @@
 #Provide Github account where thу project repo hosted and the name of repo:
 GITHUB_ORG='BHAVESHRAJ'                                         
 GITHUB_REPO='sfdx-auto'
+#test
 #Exit from build:
+
 #params: 1 - status, 2 - callback command to call before exit, 3 - comment text for  failed GitHub commit
 exit_on_error() {
     if [ $1 -ne 0 ]
