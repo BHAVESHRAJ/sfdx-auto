@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sfdx --version
 echo '=========================== v2.3 ================================='
 cp /fullpath/sfdx-project.json ./sfdx-project.json
 sfdx force:auth:list
