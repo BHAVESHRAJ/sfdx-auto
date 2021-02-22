@@ -1,19 +1,4 @@
 #!/bin/bash
-#Exit from build:
-#params: 1 - status, 2 - callback command to call before exit, 3 - comment text for  failed GitHub commit
-exit_on_error() {
-    if [ $1 -ne 0 ]
-    then
-        echo '=== ### Exit On Error ### ==='
-        if [ "$2" != '' ]
-        then
-            $2
-        fi
-
-        echo 'Failure' "$3"
-        exit 1
-    fi
-}
 
 sfdx --version
 echo '=========================== v2.3 ================================='
